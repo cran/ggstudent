@@ -1,9 +1,9 @@
-512a2d7f96e605dd8e71631ef65ed6bc *DESCRIPTION
+5bc5255f29c3ce4ed67c8dc05d16f7ef *DESCRIPTION
 4cdb64eb06beb56d5ade0f28b55e67c2 *NAMESPACE
-d7ee7c17ded39e40fbf9e9419f9d4524 *R/statStudent.R
-6b9c5fd38b45a049da8aeeae402efbd8 *README.md
+2d4598ff3ae5266869a1d9030b0e6683 *R/statStudent.R
+9fc06d5c66579602cd1c4d27550b74a0 *README.md
 5340ab64c26d865aa724c14e39c04cbc *inst/CITATION
-3d0bd55b58177a61993e4319b73f2b63 *man/GeomStudent.Rd
-39b27771f80d633cab654ace254d38cb *man/StatStudent.Rd
+1e72db9fc552d7cc1587efe435689020 *man/GeomStudent.Rd
+bc6ca29035f33634959b3f286986ad1d *man/StatStudent.Rd
 c3e4f35188b3d68392ccb5f588ea6e4a *man/figures/example.png
-e29ee27540c569a4e95300b573fdc615 *man/geom_student.Rd
+da29a2bc9e8a8fc640428001f4ac3e3c *man/geom_student.Rd

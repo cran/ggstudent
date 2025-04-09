@@ -4,37 +4,30 @@
 \alias{geom_student}
 \title{Student CI plot}
 \usage{
-geom_student(mapping = NULL, data = NULL, position = "identity",
-  width = 0.25, type = "density", scale = TRUE, draw_lines = NULL,
-  draw_mean = TRUE, show.legend = NA, inherit.aes = TRUE, ...)
+geom_student(
+  mapping = NULL,
+  data = NULL,
+  position = "identity",
+  width = 0.25,
+  type = "density",
+  scale = TRUE,
+  draw_lines = NULL,
+  draw_mean = TRUE,
+  show.legend = NA,
+  inherit.aes = TRUE,
+  ...
+)
 }
 \arguments{
-\item{mapping}{Set of aesthetic mappings created by \code{\link[=aes]{aes()}} or
-\code{\link[=aes_]{aes_()}}. If specified and \code{inherit.aes = TRUE} (the
-default), it is combined with the default mapping at the top level of the
-plot. You must supply \code{mapping} if there is no plot mapping.}
+\item{mapping}{Set of aesthetic mappings. See [ggplot2::layer()] for details.}
 
-\item{data}{The data to be displayed in this layer. There are three
-options:
+\item{data}{The data to be displayed in this layer. See [ggplot2::layer()] for details.}
 
-If \code{NULL}, the default, the data is inherited from the plot
-data as specified in the call to \code{\link[=ggplot]{ggplot()}}.
-
-A \code{data.frame}, or other object, will override the plot
-data. All objects will be fortified to produce a data frame. See
-\code{\link[=fortify]{fortify()}} for which variables will be created.
-
-A \code{function} will be called with a single argument,
-the plot data. The return value must be a \code{data.frame}, and
-will be used as the layer data. A \code{function} can be created
-from a \code{formula} (e.g. \code{~ head(.x, 10)}).}
-
-\item{position}{Position adjustment, either as a string, or the result of
-a call to a position adjustment function.}
+\item{position}{A position adjustment to use on the data for this layer. See [ggplot2::layer()] for details.}
 
 \item{width}{Scaling parameter for the width of the violin/rectangle.}
 
-\item{type}{Type of the plot. The default is \code{density} which draws violin style density plot,
+\item{type}{Type of the plot. The default is \code{"density"} which draws violin style density plot,
 whereas \code{"box"} draws a rectangle shaped gradient plot.}
 
 \item{scale}{If \code{"TRUE"} (default), violins/rectangles are scaled according
@@ -45,18 +38,11 @@ at the given quantiles of the density estimate.}
 
 \item{draw_mean}{If \code{TRUE} (default), draw horizontal line at mean.}
 
-\item{show.legend}{logical. Should this layer be included in the legends?
-\code{NA}, the default, includes if any aesthetics are mapped.
-\code{FALSE} never includes, and \code{TRUE} always includes.
-It can also be a named logical vector to finely select the aesthetics to
-display.}
+\item{show.legend}{logical. Should this layer be included in the legends? See [ggplot2::layer()] for details.}
 
-\item{inherit.aes}{If \code{FALSE}, overrides the default aesthetics,
-rather than combining with them. This is most useful for helper functions
-that define both data and aesthetics and shouldn't inherit behaviour from
-the default plot specification, e.g. \code{\link[=borders]{borders()}}.}
+\item{inherit.aes}{If `FALSE`, overrides the default aesthetics. See [ggplot2::layer()] for details.}
 
-\item{...}{Other arguments passed to \code{layer()}, such as fixed aesthetics.}
+\item{...}{Other arguments passed to [ggplot2::layer()], such as fixed aesthetics.}
 }
 \value{
 A ggplot object.
@@ -101,7 +87,7 @@ p2
 
 }
 \references{
-Helske, J, S Helske, M Cooper, A Ynnerman, and L Besançon (2020).
-Are You Sure You’re Sure? - Effects of Visual Representation on the Cliff Effect in Statistical Inference.
-Under review. https://arxiv.org/abs/2002.07671
+Helske, J., Helske, S., Cooper, M., Ynnerman, A., & Besancon, L. (2021).
+Can visualization alleviate dichotomous thinking? Effects of visual representations on the cliff effect.
+IEEE Transactions on Visualization and Computer Graphics, 27(8), 3397-3409 doi: 10.1109/TVCG.2021.3073466
 }

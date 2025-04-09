@@ -5,7 +5,9 @@
 \alias{StatStudent}
 \title{Bits and pieces copied from ggplot2 sources and
 https://github.com/wjschne/ggnormalviolin}
-\format{An object of class \code{StatStudent} (inherits from \code{Stat}, \code{ggproto}, \code{gg}) of length 5.}
+\format{
+An object of class \code{StatStudent} (inherits from \code{Stat}, \code{ggproto}, \code{gg}) of length 5.
+}
 \description{
 StatStudent
 }

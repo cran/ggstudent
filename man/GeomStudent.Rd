@@ -4,7 +4,9 @@
 \name{GeomStudent}
 \alias{GeomStudent}
 \title{GeomStudent}
-\format{An object of class \code{GeomStudent} (inherits from \code{Geom}, \code{ggproto}, \code{gg}) of length 5.}
+\format{
+An object of class \code{GeomStudent} (inherits from \code{Geom}, \code{ggproto}, \code{gg}) of length 5.
+}
 \description{
 GeomStudent
 }

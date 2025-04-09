@@ -193,19 +193,23 @@ GeomStudent <- ggplot2::ggproto(
 #' which replaces the violin shaped density with a rectangle.
 #'
 #' @import dplyr
-#' @inheritParams ggplot2::layer
+#' @param mapping Set of aesthetic mappings. See [ggplot2::layer()] for details.
+#' @param data The data to be displayed in this layer. See [ggplot2::layer()] for details.
+#' @param position A position adjustment to use on the data for this layer. See [ggplot2::layer()] for details.
 #' @param draw_lines If not \code{NULL} (default), draw horizontal lines
 #'   at the given quantiles of the density estimate.
 #' @param draw_mean If \code{TRUE} (default), draw horizontal line at mean.
-#' @param type Type of the plot. The default is \code{density} which draws violin style density plot,
+#' @param type Type of the plot. The default is \code{"density"} which draws violin style density plot,
 #' whereas \code{"box"} draws a rectangle shaped gradient plot.
 #' @param width Scaling parameter for the width of the violin/rectangle.
 #' @param scale If \code{"TRUE"} (default), violins/rectangles are scaled according
 #' to the maximum width of the groups (\code{max(dt(0, df) / se)}).
-#' @param ... Other arguments passed to \code{layer()}, such as fixed aesthetics.
-#' @references Helske, J, S Helske, M Cooper, A Ynnerman, and L Besançon (2020).
-#' Are You Sure You’re Sure? - Effects of Visual Representation on the Cliff Effect in Statistical Inference.
-#' Under review. https://arxiv.org/abs/2002.07671
+#' @param show.legend logical. Should this layer be included in the legends? See [ggplot2::layer()] for details.
+#' @param inherit.aes If `FALSE`, overrides the default aesthetics. See [ggplot2::layer()] for details.
+#' @param ... Other arguments passed to [ggplot2::layer()], such as fixed aesthetics.
+#' @references Helske, J., Helske, S., Cooper, M., Ynnerman, A., & Besancon, L. (2021).
+#' Can visualization alleviate dichotomous thinking? Effects of visual representations on the cliff effect.
+#' IEEE Transactions on Visualization and Computer Graphics, 27(8), 3397-3409 doi: 10.1109/TVCG.2021.3073466
 #' @return A ggplot object.
 #' @export
 #' @examples
@@ -247,7 +251,6 @@ geom_student <- function(
   scale = TRUE,
   draw_lines = NULL,
   draw_mean = TRUE,
-  #na.rm = FALSE,
   show.legend = NA,
   inherit.aes = TRUE,
   ...
